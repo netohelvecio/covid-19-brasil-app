@@ -14,7 +14,7 @@ export default function Routes() {
       <Tab.Navigator
         initialRouteName="Brazil"
         tabBarOptions={{
-          activeTintColor: '#7E3F8F',
+          activeTintColor: '#473f97',
           labelStyle: {
             fontSize: 14,
             fontWeight: 'bold',
@@ -31,7 +31,7 @@ export default function Routes() {
           options={{
             tabBarLabel: 'Brasil',
             tabBarIcon: ({ color }) => (
-              <MaterialIcons name="public" color={color} size={26} />
+              <MaterialIcons name="home" color={color} size={26} />
             ),
           }}
         />
@@ -41,7 +41,7 @@ export default function Routes() {
           options={{
             tabBarLabel: 'Mundo',
             tabBarIcon: ({ color }) => (
-              <MaterialIcons name="home" color={color} size={26} />
+              <MaterialIcons name="public" color={color} size={26} />
             ),
           }}
         />
