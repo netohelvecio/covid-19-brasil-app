@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import DateTimePicker from '@react-native-community/datetimepicker';
-import { format } from 'date-fns';
+import { format, subDays } from 'date-fns';
 import pt from 'date-fns/locale/pt-BR';
 
 import { Container, DateButton, DateText } from './styles';
@@ -38,6 +38,7 @@ export default function DateInput({ date, onChange }) {
             mode="date"
             display="spinner"
             onChange={changeDate}
+            maximumDate={subDays(new Date(), 1)}
           />
         )}
       </DateButton>

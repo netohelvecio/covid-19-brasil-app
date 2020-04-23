@@ -12,3 +12,13 @@ export const TextCovid = styled.Text`
   font-weight: bold;
   margin-top: 20px;
 `;
+
+export const ContainerDate = styled.View`
+  padding: 0 40px;
+  margin-top: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const ButtonDate = styled.TouchableOpacity``;
