@@ -22,3 +22,12 @@ export const ContainerDate = styled.View`
 `;
 
 export const ButtonDate = styled.TouchableOpacity``;
+
+export const ContainerCardsStats = styled.View`
+  margin-top: 40px;
+`;
+
+export const ContainerCardsStatsChild = styled.View`
+  margin-top: 10px;
+  flex-direction: row;
+`;

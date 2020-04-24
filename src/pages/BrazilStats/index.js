@@ -3,8 +3,16 @@ import { format, subDays, addDays } from 'date-fns';
 import { MaterialIcons } from '@expo/vector-icons';
 
 import DateInput from '../../components/DateInput';
+import CardStats from '../../components/CardStats';
 
-import { Container, TextCovid, ContainerDate, ButtonDate } from './styles';
+import {
+  Container,
+  TextCovid,
+  ContainerDate,
+  ButtonDate,
+  ContainerCardsStats,
+  ContainerCardsStatsChild,
+} from './styles';
 
 export default function BrazilStats() {
   const [date, setDate] = useState(subDays(new Date(), 1));
@@ -29,15 +37,27 @@ export default function BrazilStats() {
 
       <ContainerDate>
         <ButtonDate onPress={subDay}>
-          <MaterialIcons name="chevron-left" color="#fff" size={30} />
+          <MaterialIcons name="chevron-left" color="#fff" size={40} />
         </ButtonDate>
 
         <DateInput date={date} onChange={setDate} />
 
         <ButtonDate onPress={addDay} disabled={date > subDays(new Date(), 2)}>
-          <MaterialIcons name="chevron-right" color="#fff" size={30} />
+          <MaterialIcons name="chevron-right" color="#fff" size={40} />
         </ButtonDate>
       </ContainerDate>
+
+      <ContainerCardsStats>
+        <ContainerCardsStatsChild>
+          <CardStats name="Casos" value={3000} color="#ffb259" />
+          <CardStats name="Mortes" value={3000} color="#ff5959" />
+        </ContainerCardsStatsChild>
+
+        <ContainerCardsStatsChild>
+          <CardStats name="Recuperados" value={3000} color="#4cd97b" />
+          <CardStats name="Ativos" value={3000} color="#4cb5ff" />
+        </ContainerCardsStatsChild>
+      </ContainerCardsStats>
     </Container>
   );
 }

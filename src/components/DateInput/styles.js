@@ -4,9 +4,9 @@ export const Container = styled.View``;
 
 export const DateButton = styled.TouchableOpacity`
   background-color: #fff;
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
 
   justify-content: center;
   align-items: center;
