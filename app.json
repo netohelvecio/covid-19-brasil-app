@@ -1,11 +1,10 @@
 {
   "expo": {
-    "name": "covid-19",
-    "slug": "covid-19",
+    "name": "Covid-19 Brasil",
+    "slug": "covid-19-brasil",
     "platforms": [
       "ios",
-      "android",
-      "web"
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,7 +12,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#473f97"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -26,6 +25,14 @@
     },
     "androidStatusBar": {
       "backgroundColor": "#473f97"
+    },
+    "android": {
+      "package": "com.netohelvecio.covid19brasil",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon-fg.png",
+        "backgroundColor": "#fff"
+      }
     }
   }
 }

@@ -15,7 +15,7 @@ export const TextCovid = styled.Text`
 
 export const ContainerDate = styled.View`
   padding: 0 40px;
-  margin-top: 20px;
+  margin-top: 38px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +24,7 @@ export const ContainerDate = styled.View`
 export const ButtonDate = styled.TouchableOpacity``;
 
 export const ContainerCardsStats = styled.View`
-  margin-top: 40px;
+  margin-top: 30px;
 `;
 
 export const ContainerCardsStatsChild = styled.View`
