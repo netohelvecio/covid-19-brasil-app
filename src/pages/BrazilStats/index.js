@@ -70,7 +70,15 @@ export default function BrazilStats() {
         <DateInput date={date} onChange={setDate} />
 
         <ButtonDate onPress={addDay} disabled={date > subDays(new Date(), 2)}>
-          <MaterialIcons name="chevron-right" color="#fff" size={40} />
+          <MaterialIcons
+            name="chevron-right"
+            color={
+              date > subDays(new Date(), 2)
+                ? 'rgba(255, 255, 255, 0.5)'
+                : '#fff'
+            }
+            size={40}
+          />
         </ButtonDate>
       </ContainerDate>
 

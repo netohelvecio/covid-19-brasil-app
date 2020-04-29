@@ -1,10 +1,10 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-import { MaterialIcons } from '@expo/vector-icons';
+import { MaterialIcons, Entypo } from '@expo/vector-icons';
 
 import BrazilStats from './pages/BrazilStats';
-import WorldStats from './pages/WorldStats';
+import GraphStats from './pages/GraphStats';
 
 const Tab = createBottomTabNavigator();
 
@@ -31,17 +31,17 @@ export default function Routes() {
           options={{
             tabBarLabel: 'Brasil',
             tabBarIcon: ({ color }) => (
-              <MaterialIcons name="home" color={color} size={26} />
+              <MaterialIcons name="info" color={color} size={26} />
             ),
           }}
         />
         <Tab.Screen
           name="World"
-          component={WorldStats}
+          component={GraphStats}
           options={{
-            tabBarLabel: 'Mundo',
+            tabBarLabel: 'Gráficos',
             tabBarIcon: ({ color }) => (
-              <MaterialIcons name="public" color={color} size={26} />
+              <Entypo name="area-graph" color={color} size={26} />
             ),
           }}
         />
