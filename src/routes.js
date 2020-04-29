@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-import { MaterialIcons, Entypo } from '@expo/vector-icons';
+import { MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
 
 import BrazilStats from './pages/BrazilStats';
 import GraphStats from './pages/GraphStats';
@@ -41,7 +41,11 @@ export default function Routes() {
           options={{
             tabBarLabel: 'Gráficos',
             tabBarIcon: ({ color }) => (
-              <Entypo name="area-graph" color={color} size={26} />
+              <MaterialCommunityIcons
+                name="chart-line"
+                color={color}
+                size={26}
+              />
             ),
           }}
         />
