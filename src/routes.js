@@ -9,6 +9,8 @@ import GraphStats from './pages/GraphStats';
 const Tab = createBottomTabNavigator();
 
 export default function Routes() {
+  console.log("coe")
+
   return (
     <NavigationContainer>
       <Tab.Navigator
